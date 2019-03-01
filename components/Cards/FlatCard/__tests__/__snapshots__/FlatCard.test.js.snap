@@ -47,13 +47,6 @@ exports[`FlatCard should render with many props assigned 1`] = `
         Sub heading
       </h6>
     </div>
-    <div
-      className="rowCenter"
-    >
-      <img
-        className="image"
-      />
-    </div>
     <hr
       className="divider"
     />
@@ -78,13 +71,6 @@ exports[`FlatCard should render with required props 1`] = `
   <div
     className="borderContainer"
   >
-    <div
-      className="rowCenter"
-    >
-      <img
-        className="image"
-      />
-    </div>
     <div
       className="children"
     >
