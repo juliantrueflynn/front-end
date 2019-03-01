@@ -8,8 +8,6 @@ import FlatCard from '../FlatCard';
 
 describe('FlatCard', () => {
   const requiredProps = {
-    imageSource: `${s3}headshots/david_molina.jpg`,
-    imageAlt: "David Molina's face",
     children: (
       <>
         <p>Example content goes here</p>
@@ -18,8 +16,18 @@ describe('FlatCard', () => {
     ),
   };
 
+  const imageProps = {
+    imageSource: `${s3}headshots/david_molina.jpg`,
+    imageAlt: "David Molina's face",
+    ...requiredProps,
+  };
+
   it('should render with required props', () => {
     createSnapshotTest(<FlatCard {...requiredProps} />);
+  });
+
+  it('should render with image props', () => {
+    createSnapshotTest(<FlatCard {...imageProps} />);
   });
 
   it('should render with many props assigned', () => {
